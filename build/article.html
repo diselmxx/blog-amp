@@ -1,0 +1,2855 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Components -->
+    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-element="amp-access" src="https://cdn.ampproject.org/v0/amp-access-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+<!-- Components -->
+
+
+
+<!-- Styles -->
+<style amp-custom>
+/*fonts --------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('fonts/AkzidenzGroteskPro-LightIt.eot');
+    src: local('fonts/Akzidenz-Grotesk Pro LightIt'), local('fonts/AkzidenzGroteskPro-LightIt'),
+    url('fonts/AkzidenzGroteskPro-LightIt.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AkzidenzGroteskPro-LightIt.woff') format('woff'),
+    url('fonts/AkzidenzGroteskPro-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('fonts/AkzidenzGroteskPro-Bold.eot');
+    src: local('fonts/Akzidenz-Grotesk Pro Bold'), local('fonts/AkzidenzGroteskPro-Bold'),
+    url('fonts/AkzidenzGroteskPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AkzidenzGroteskPro-Bold.woff') format('woff'),
+    url('fonts/AkzidenzGroteskPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('fonts/AkzidenzGroteskPro-BoldIt.eot');
+    src: local('fonts/Akzidenz-Grotesk Pro BoldIt'), local('fonts/AkzidenzGroteskPro-BoldIt'),
+    url('fonts/AkzidenzGroteskPro-BoldIt.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AkzidenzGroteskPro-BoldIt.woff') format('woff'),
+    url('fonts/AkzidenzGroteskPro-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('fonts/AkzidenzGroteskPro-XBdIt.eot');
+    src: local('fonts/Akzidenz-Grotesk Pro ExtraBldIt'), local('fonts/AkzidenzGroteskPro-XBdIt'),
+    url('fonts/AkzidenzGroteskPro-XBdIt.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AkzidenzGroteskPro-XBdIt.woff') format('woff'),
+    url('fonts/AkzidenzGroteskPro-XBdIt.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('fonts/AkzidenzGroteskPro-Light.eot');
+    src: local('Akzidenz-Grotesk Pro Light'), local('AkzidenzGroteskPro-Light'),
+    url('fonts/AkzidenzGroteskPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AkzidenzGroteskPro-Light.woff') format('woff'),
+    url('fonts/AkzidenzGroteskPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('fonts/AkzidenzGroteskPro-It.eot');
+    src: local('fonts/Akzidenz-Grotesk Pro Italic'), local('fonts/AkzidenzGroteskPro-It'),
+    url('fonts/AkzidenzGroteskPro-It.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AkzidenzGroteskPro-It.woff') format('woff'),
+    url('fonts/AkzidenzGroteskPro-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Akzidenz-Grotesk Pro';
+    src: url('fonts/AkzidenzGroteskPro-XBd.eot');
+    src: local('fonts/Akzidenz-Grotesk Pro ExtraBold'), local('fonts/AkzidenzGroteskPro-XBd'),
+    url('fonts/AkzidenzGroteskPro-XBd.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AkzidenzGroteskPro-XBd.woff') format('woff'),
+    url('fonts/AkzidenzGroteskPro-XBd.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+/* /fonts --------------------------------------------------------------------------*/
+* {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    padding-top: 80px;
+    background: #fbfbfb;
+    min-height: 100%;
+    font-size:14px;
+}
+main {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+table {
+    border-collapse: collapse;
+}
+img {
+    max-width: 100%;
+}
+button {
+    cursor: pointer;
+    background: none;
+}
+.container-long {
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.container-short {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
+}
+.container-small {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.container-pb {
+    padding-bottom: 150px;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #161616;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1001;
+    transition: 0.2s;
+}
+.modal-wrap.active {
+    opacity: 0.9;
+    visibility: visible;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fl-right {
+    float: right;
+}
+.fl-left {
+    float: left;
+}
+.bg-main {
+    background: #f2f2f2;
+}
+.relative {
+    position: relative;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.link-underline {
+    text-decoration: underline;
+}
+.link-underline:hover {
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    background: #fff;
+    color: #4a4a4a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1;
+    font-weight: 400;
+    font-family: 'Akzidenz-Grotesk Pro',sans-serif;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 32px;
+}
+.content {
+    position: relative;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+    font-weight: 300;
+}
+.content > * + * {
+    margin-top: 20px;
+}
+.content > h1 + * {
+    margin-top: 25px;
+}
+.content > h2 + * {
+    margin-top: 20px;
+}
+.content > img + * {
+    margin-top: 30px;
+}
+.content > * + h2 {
+    margin-top: 40px;
+}
+.content > * + h3 {
+    margin-top: 40px;
+}
+.content > * + h4 {
+    margin-top: 30px;
+}
+.content > * + img {
+    margin-top: 3rem;
+}
+.content > img + img {
+    margin-top: 15px;
+}
+.content > h2 + h3 {
+    margin-top: 30px;
+}
+.content > p {
+    font-size: 16px;
+    line-height: 22px;
+}
+.content p.small {
+    font-size: 14px;
+    line-height: 20px;
+}
+.content + .page-header {
+    margin-top: 40px;
+}
+
+.placeholder {
+    font-size: 30px;
+    color: green;
+}
+
+.cf {
+    font-size: 0;
+}
+
+.img-column {
+    display: inline-block;
+    width: 50%;
+}
+
+.amp-carousel-button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.options {
+    margin: 16px 0;
+}
+
+.form-descr-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.form-descr-text.error {
+    color:red;
+}
+
+.burger-bg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url('menu.svg') center center no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.btn_inline {
+    display: inline-flex;
+}
+
+.btn_gray {
+    position: relative;
+    color: #707070;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    border: 1px solid #d0d0d0;
+    letter-spacing: -0.56px;
+    transition: background 0.3s;
+    z-index: 1;
+}
+
+.btn_gray:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #767676 0%, #00172a 100%);
+    opacity: 0;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.btn_gray:hover {
+    color: #fff;
+}
+
+.btn_gray:hover:before {
+    opacity: 1;
+}
+
+.btn_gray.active {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.btn_gray.active:before {
+    opacity: 1;
+}
+
+.btn_gray-active {
+    color: #fff;
+    transition: 0.2s;
+}
+
+.btn_gray-active:before {
+    opacity: 1;
+}
+
+.btn_gray-active:hover {
+    opacity: 0.7;
+}
+
+.comment-btn {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.slide-btn {
+    position: relative;
+    max-width: 255px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: -0.5px;
+    transition: 0.2s;
+    overflow: hidden;
+}
+
+.slide-btn:hover {
+    box-shadow: 0px 0px 10px #fff;
+}
+
+.slide-btn_small {
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    letter-spacing: -0.44px;
+}
+
+.more-btn {
+    margin: 0 auto;
+    max-width: 400px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.56px;
+    transition: 0.4s;
+}
+
+.more-btn strong {
+    position: relative;
+    display: inline-block;
+    top: -1px;
+    margin: 0 4px;
+}
+
+.more-btn:hover {
+    opacity: 0.8;
+}
+
+.more-btn_xbox-one {
+    background-image: linear-gradient(210deg, #78ff00 0%, #32ae00 100%);
+}
+
+.more-btn_ps4 {
+    background-image: linear-gradient(225deg, #ff057c 0%, #8d0b93 51%, #321575 100%);
+}
+
+.login-btn {
+    height: 40px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.sing-up-btn {
+    width: 140px;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    color: #fff;
+    background-color: #751d9a;
+    transition: 0.2s;
+}
+
+.sing-up-btn:hover {
+    background-color: #9f27d1;
+}
+
+.show-more-comments-btn {
+    height: 70px;
+    width: 100%;
+    max-width: 705px;
+    margin: 35px 0 20px;
+}
+
+.show-more-comments-btn:hover path {
+    fill: #fff;
+}
+
+.show-more-comments-btn amp-img {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    width: 19px;
+    height: 19px;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+
+.show-more-comments-btn span {
+    position: relative;
+}
+
+.show-more-comments-btn span:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+
+.reply-btn {
+    width: 100px;
+    height: 30px;
+    color: #707070;
+    font-size: 13px;
+    letter-spacing: -0.41px;
+}
+
+.new-article-btn {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 175px;
+    margin-right: 10px;
+}
+
+.send-btn {
+    float: right;
+    width: 205px;
+}
+
+.login-form__btn {
+    width: 150px;
+}
+
+.login-form__btn.tabButton {
+    position: absolute;
+    top: 0;
+}
+.login-form__btn.btn_gray {
+    left: 0;
+}
+
+.login-form__btn.sing-in-btn {
+    right: 0;
+}
+
+.sing-in-btn {
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: -0.56px;
+    transition: 0.2s;
+}
+
+.sing-in-btn:hover,
+.sing-in-btn.active {
+    color: #3ac900;
+    border: 1px solid #3ac900;
+}
+
+.header-btn {
+    display: none;
+    width: 190px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: -0.56px;
+}
+
+.header-btn:hover {
+    opacity: 0.8;
+}
+
+.header-btn_green {
+    background-color: #49cc00;
+}
+
+.header-btn_blue {
+    background-color: #62b7ce;
+}
+
+/* Base media styles */
+@media only screen and (max-width: 1200px) {
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 965px) {
+    .container-short {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container-pb {
+        padding-bottom: 60px;
+    }
+    .text-mobile-center {
+        text-align: center;
+    }
+    .text-mobile-left {
+        text-align: left;
+    }
+    .text-mobile-right {
+        text-align: right;
+    }
+    html,body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+}
+
+/* Base amp styles */
+#sidebar > div:empty {
+    display: none;
+}
+
+amp-lightbox {
+    z-index: 2147483647;
+}
+
+amp-selector [option][selected] {
+    outline: none;
+}
+.lightbox {
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabContent {
+    display: none;
+    width: 100%;
+}
+    
+.tabButton[selected]+.tabContent {
+    display: block;
+}
+
+
+
+.header-container,
+.footer-container {
+    background: #161616;
+}
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.header-container.fixed {
+    opacity: 0.9;
+}
+.header-container.fixed header,
+.header-container.fixed .mobile-menu__header,
+.header-container.fixed .mobile-menu__logo {
+    height: 60px;
+}
+.header-container.fixed .header-login__column {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header-container.fixed .drop-menu {
+    background: rgba(22,22,22,0.9);
+}
+.header-container.fixed .nav-menu__link:hover {
+    color: inherit;
+}
+.header-container.fixed .nav-menu li:after {
+    display: none;
+}
+.header-container.fixed .nav-menu li.active .nav-menu__link {
+    color: inherit;
+}
+.header-container.hidden {
+    top: -100px;
+}
+.header-container.hidden .drop-menu {
+    display: none;
+}
+.header-container.active {
+    opacity: 1;
+}
+.header-container.active .mobile-menu__nav {
+    display: block;
+}
+header,
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1460px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    transition: 0.5s;
+    color: #fff;
+}
+header .nav-menu li:after,
+.footer-menu .nav-menu li:after {
+    background: #fff;
+}
+header .back-top-btn:hover:after,
+.footer-menu .back-top-btn:hover:after {
+    background: #fff;
+}
+.footer-menu__logo amp-img {
+    display: inline-block;
+}
+.xbox-one-color {
+    color: #3ac900;
+}
+.xbox-one-color .nav-menu li:after {
+    background: #3ac900;
+}
+.xbox-one-color .back-top-btn:hover:after {
+    background: #3ac900;
+}
+.ps4-color {
+    color: #fa057d;
+}
+.ps4-color .nav-menu li:after {
+    background: #fa057d;
+}
+.ps4-color .back-top-btn:hover:after {
+    background: #fa057d;
+}
+.nav-menu.article-product-page {
+    display: none;
+}
+.nav-menu.article-product-page ~ .header-btn {
+    display: flex;
+}
+.nav-menu li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.nav-menu li:after {
+    content: "";
+    display:none;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 0;
+    height: 10px;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    border-radius: 100px;
+}
+.nav-menu li.active:after {
+    width: 10px;
+}
+.nav-menu li:hover:after {
+    width: 100%;
+}
+.nav-menu_footer {
+    flex: 1 1 auto;
+    margin-left: 95px;
+}
+.nav-menu__link {
+    position: relative;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.56px;
+}
+.nav-menu__link .fa {
+    margin-right: 6px;
+}
+.back-top-btn {
+    position: relative;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+}
+.back-top-btn span {
+    display: block;
+}
+.back-top-btn button {
+    height:34px;
+    width: 34px;
+}
+.back-top-btn .back-top-icon-mobile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+.back-top-icon {
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: rotate(-180deg) translateY(50%);
+}
+.mobile-menu {
+    width: 100%;
+    z-index: 11;
+    transition: 0.5s;
+}
+.mobile-menu__header {
+    position: relative;
+    padding: 0 60px;
+    height: 81px;
+    background-color: #161616;
+}
+.mobile-menu__header .fa {
+    font-size: 18px;
+    color: #fff;
+}
+.mobile-menu__btn,
+.mobile-menu__search-link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.mobile-menu__btn .fa,
+.mobile-menu__search-link .fa {
+    font-size: 18px;
+    color: #fff;
+}
+.mobile-menu__search-link {
+    right: 20px;
+}
+.mobile-menu__btn {
+    left: 20px;
+}
+.mobile-menu__btn .fa {
+    display: block;
+}
+.mobile-menu__btn img {
+    display: none;
+}
+.mobile-menu__btn.active .fa {
+    display: none;
+}
+.mobile-menu__btn.active img {
+    display: block;
+}
+.mobile-menu__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    transform: scale(0.8);
+}
+.mobile-menu__nav {
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 80vw;
+    max-width: 380px;
+    height: 100vh;
+    background: #2d2d2d;
+    z-index: 11;
+    overflow: auto;
+}
+.mobile-menu__nav .fa-times {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+.mobile-menu__row {
+    padding: 20px 0;
+    border-bottom: 1px solid #4a4a4a;
+    text-align: center;
+}
+.mobile-menu__row:last-child {
+    border: none;
+}
+.mobile-menu__row-descr {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.mobile-menu__link {
+    display: inline-block;
+    padding: 7px 57px;
+    line-height: 1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+    border: 1px solid transparent;
+}
+.mobile-menu__link .fa {
+    font-size: 20px;
+    color: #fff;
+}
+.mobile-menu__link .fa-user {
+    position: relative;
+    top: -2px;
+    right: 4px;
+}
+.mobile-menu__link.active {
+    border: 1px solid #3ac900;
+}
+.mobile-menu__social a {
+    padding: 5px 10px;
+}
+.mobile-menu__social .fa {
+    font-size: 20px;
+    color: #fff;
+}
+/* login form --------------------------------------------------------------------*/
+.login-form {
+    position: fixed;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    max-height: 100vh;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    background: #fff;
+    z-index: 1003;
+}
+.login-form__header {
+    position: relative;
+    margin-bottom: 30px;
+}
+.login-form__content {
+    position: relative;
+    padding-top: 70px
+}
+.login-form__footer .checkbox {
+    padding-top: 9px;
+}
+.login-form__tabContent {
+    padding-top: 20px;
+    border-top: 1px solid #d0d0d0;
+}
+.login-form__logo {
+    display: inline-block;
+}
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+}
+.checkbox {
+    display: inline-block;
+}
+.checkbox input {
+    display: none;
+}
+.checkbox input:checked ~ .checkbox__mask {
+    background-image: url("../img/server/checkbox-icon.svg");
+}
+.checkbox input:checked ~ .checkbox__label {
+    color: #000;
+}
+.checkbox__mask,
+.checkbox__label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.checkbox__mask {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.checkbox__label {
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.28px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .nav-menu__link,.header-icon {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-menu__link,.header-icon {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .back-top-btn {
+        font-size: 0;
+    }
+    .nav-menu_footer {
+        margin: 0;
+        flex: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .footer-menu {
+        display: block;
+        padding: 30px 20px;
+        height: auto;
+        text-align: center;
+    }
+    .nav-menu_footer li {
+        display: block;
+    }
+    .nav-menu_footer li:after {
+        display: none;
+    }
+    .nav-menu_footer li:last-child .nav-menu__link {
+        padding-bottom: 0;
+    }
+    .nav-menu_footer .nav-menu__link {
+        display: block;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+}
+.breadcrumbs {
+    padding: 10px 20px;
+    font-size: 0;
+}
+.breadcrumbs a {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    color: #707070;
+    font-size: 10px;
+}
+.breadcrumbs a:after {
+    content: "/";
+    position: relative;
+    top: 0.6px;
+    display: inline-block;
+    margin: 0 5px;
+}
+.breadcrumbs a:hover {
+    color: #3ac900;
+}
+.category-header {
+    position: relative;
+    width: 100%;
+}
+
+.category-header:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 200vw;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.category-header .tag-list {
+    padding-bottom: 15px;
+}
+
+.category-title {
+    position: relative;
+    margin-bottom: 25px;
+    color: #161616;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -0.67px;
+}
+
+.title-marker:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-image: linear-gradient(225deg, #78ff00 0%, #32ae00 100%);
+}
+
+.title-marker_xbox-one:before {
+    background-image: linear-gradient(225deg, #78ff00 0%, #32ae00 100%);
+}
+
+.title-marker_ps4:before {
+    background-image: linear-gradient(225deg, #fa057d 0%, #a20f57 100%);
+}
+.article-author__header {
+    margin-bottom: 15px;
+}
+
+.article-author__title {
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.93px;
+}
+
+.article-author__img-wrap {
+    width: 108px;
+    height: 108px;
+    border-radius: 100%;
+    margin-right: 15px;
+    background: #fff;
+}
+.article-author__name {
+    font-size: 36px;
+    color: #4a4a4a;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.article-author__name,
+.article-author__img-wrap {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.article-author__info {
+    position: relative;
+    padding-right: 160px;
+}
+
+.article-author__info > p {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 720px;
+}
+
+.article-author__social {
+    position: absolute;
+    top: -82px;
+    right: -140px;
+    width: 280px;
+}
+
+.article-author__social-descr {
+    font-size: 13px;
+    line-height: 17px;
+}
+.articles-slider {
+    position: relative;
+    width: 100%;
+    padding:0 20px;
+}
+
+.article-slide {
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 225px;
+    height: 335px;
+    border: 1px solid #d0d0d0;
+    overflow: hidden;
+}
+
+.article-slide:hover .article-slide__img img {
+    transform: scale(1.05);
+}
+
+.articles-slider-header {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.articles-slider-title {
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.93px;
+}
+
+.articles-slider-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.articles-slider-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.articles-slider-next-btn {
+    transform: rotate(180deg);
+}
+
+.article-slide__img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.article-slide__img img {
+    transition: 0.6s;
+    width: 100%;
+}
+
+.article-slide__content {
+    position: relative;
+    padding: 13px 13px 50px;
+    overflow: hidden;
+    height: 173px;
+    white-space: normal;
+}
+
+.article-slide__title {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: -0.37px;
+}
+
+.article-slide__text {
+    margin-bottom: 10px;
+    color: #707070;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.article-slide__author-content {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+}
+
+.article-slide__author-name {
+    margin-bottom: 3px;
+    color: #4a4a4a;
+    font-size: 15px;
+    letter-spacing: -0.58px;
+}
+
+.article-slide__data {
+    color: #4a4a4a;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+
+.article {
+    padding: 30px 0;
+}
+
+.article:last-child {
+    padding-bottom: 150px;
+}
+
+.article .content > p {
+    max-width: 800px;
+}
+
+.article__header {
+    margin-bottom: 30px;
+}
+
+.article__header *:last-child {
+    margin-bottom: 0;
+}
+
+.article__title {
+    position: relative;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: -0.89px;
+}
+
+.article__title.title-marker:before {
+    top: 6px;
+}
+
+h4 + .article__list {
+    margin-top: 20px;
+}
+
+.article__list li {
+    position: relative;
+    padding-left: 35px;
+    color: #4a4a4a;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.article__list li:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 10px;
+    top: 8px;
+    background: #4a4a4a;
+    line-height: inherit;
+}
+
+.article__descr {
+    margin-bottom: 30px;
+    color: #707070;
+    font-size: 24px;
+}
+
+.article__big-img {
+    position: relative;
+    left: 50%;
+    width: auto;
+    transform: translateX(-50%);
+    display: block;
+    margin: 40px auto;
+    max-width: 100vw;
+}
+
+.content-row {
+    position: relative;
+    padding: 30px 0;
+    z-index: 1;
+}
+
+.content-row:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 200vw;
+    height: 100%;
+    transform: translateX(-50%);
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    z-index: -1;
+}
+
+.content-row + .content-row:after {
+    border-top: 1px solid transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+    .article-author__social {
+        position: relative;
+        margin-top: 20px;
+        right: 0;
+        top: 0;
+    }
+
+    .article-author__info {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .article {
+        padding: 15px 0 30px;
+    }
+
+    .article:last-child {
+        padding-bottom: 60px;
+    }
+
+    .article__title {
+        font-size: 48px;
+    }
+
+    .article-author__social {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .article-author__social-descr {
+        padding-right: 140px;
+    }
+
+    .social-block_article-author {
+        float: right;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .article__title {
+        font-size: 40px;
+    }
+
+    .article__descr {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .article__big-img {
+        margin: 30px auto;
+    }
+}
+.carousel-preview {
+    margin-top:4px;
+}
+.carousel-preview button {
+    height: 40px;
+    width: 60px;
+    min-width: 60px;
+    margin: 4px;
+    padding: 0;
+}
+.tag-list {
+    padding-bottom: 25px;
+    margin-left: -8px;
+}
+.tag-list li {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+.tag-list li:hover,
+.tag-list li.active {
+    border: 1px solid #d0d0d0;
+}
+.tag-list__xbox-one li {
+    border: 1px solid transparent;
+}
+.tag-list__xbox-one li:hover,
+.tag-list__xbox-one li.active {
+    border: 1px solid #64e800;
+}
+.tag-list__ps4 li {
+    border: 1px solid transparent;
+}
+.tag-list__ps4 li:hover,
+.tag-list__ps4 li.active {
+    border: 1px solid #fa057d;
+}
+.tag-list__link {
+    color: #707070;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.56px;
+}
+.descr-text {
+    margin-bottom: 5px;
+    color: #707070;
+    font-size: 13px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+    .descr-text_tag {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px 30px 5px 0;
+    }
+}
+.social-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-block__link {
+    padding: 5px 0;
+    display: inline-block;
+    margin-right: 15px;
+    color: #707070;
+    font-size: 24px;
+    transition: 0.2s;
+    background: none;
+}
+
+.social-block__link:hover {
+    color: inherit;
+}
+
+.social-block__link:last-child {
+    margin-right: 0;
+}
+
+.social-block_article-author {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 30px;
+}
+
+.social-block_article-author:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: #4a4a4a;
+}
+
+.social-block_article-content {
+    position: absolute;
+    left: 100%;
+    top: -15px;
+    width: 100px;
+    padding: 24px 0;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+}
+
+.social-block_article-content a {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+}
+.comments {
+    padding: 40px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.comments__title {
+    color: #4a4a4a;
+    font-family: 'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.93px;
+}
+
+.comments__header {
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.comments__count {
+    color: #4a4a4a;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+}
+
+.comments__count small {
+    display: inline-block;
+    margin-left: 10px;
+    color: #707070;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.comments-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 2px;
+    border: 1px solid #d0d0d0;
+    color: #707070;
+    font-size: 18px;
+    letter-spacing: -0.56px;
+}
+
+.comments__select-wrap {
+    padding: 15px 0 0;
+    color: #707070;
+    font-size: 13px;
+}
+
+.comments-select,
+.comments__select-wrap span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.comment {
+    position: relative;
+    padding: 20px 0 20px 120px;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.comment:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.comment .comment {
+    padding-left: 80px;
+    padding-bottom: 0;
+}
+
+.comment__author-foto-wrap {
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 1px solid #d0d0d0;
+    border-radius: 100%;
+    background: #fff;
+}
+
+.comment__author-foto-wrap amp-img,.comment__author-foto-wrap img,
+.comment__author-foto-wrap svg {
+    display: block;
+    border-radius: 100%;
+    max-width: 100%;
+}
+
+.comment__author-foto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    transform: translateZ(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.comment__author-name {
+    margin-right: 8px;
+}
+
+.comment__info {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+}
+
+.comment__info span,
+.comment__info amp-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.reply-icon {
+    margin: 0 3px;
+}
+
+.comment__textarea {
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 50px;
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1px solid #d0d0d0;
+    background-color: #fff;
+    color: #707070;
+    font-size: 18px;
+    line-height: 33px;
+    letter-spacing: -0.56px;
+}
+
+.comment__textarea {
+    transition: 0.6s ;
+    color: #707070;
+    font-size: 18px;
+}
+
+.comment__textarea::-webkit-input-placeholder {
+    color: #707070;
+    font-size: 18px;
+}
+.comment__textarea::-moz-placeholder {
+    color: #707070;
+    font-size: 18px;
+}
+
+.comment__textarea::ms-input-placeholder {
+    color: #707070;
+    font-size: 18px;
+}
+
+.comment__textarea:focus {
+    height: auto;
+}
+
+.comment__textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.comment__textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.comment__textarea:focus::ms-input-placeholder {
+    color: transparent;
+}
+
+.comment__textarea.active {
+    height: 250px;
+    overflow: auto;
+}
+
+.comment__textarea.active ~ .comment-btn {
+    top: inherit;
+    bottom: 5px;
+    transform: none;
+    background: linear-gradient(225deg, #767676 0%, #00172a 100%);
+    color: #fff;
+}
+
+.comment__textarea.active ~ .comment-btn:hover {
+    opacity: 0.8;
+}
+
+.comment__textarea ~ .comment-btn {
+    top: 5px;
+    transform: none;
+}
+
+.comment__header,
+.comment__content {
+    position: relative;
+    font-size: 0;
+    min-height: 60px;
+}
+
+.comment__header {
+    padding: 5px 120px 5px 0;
+}
+
+.comment__content {
+    padding: 0 120px 0 0;
+}
+
+.comment__content p {
+    color: #707070;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+}
+
+.comment__reply {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.comment__reply .reply-btn {
+    margin-bottom: 10px;
+}
+
+.like span {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.like__count {
+    margin: 0 15px;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.nice-select.comments-select {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px 0 8px;
+    height: 18px;
+    max-width: 100%;
+    width: auto;
+    color: #707070;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0px;
+    font-weight: 600;
+    letter-spacing: -0.41px;
+    line-height: 18px;
+    float: none;
+    border: none;
+    transition: 0.2s;
+}
+
+.nice-select.comments-select:after {
+    content: "";
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #4b4b4b transparent transparent transparent;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.nice-select.comments-select.open:after {
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent #4b4b4b transparent;
+    transform: translateY(-50%);
+}
+
+.nice-select.comments-select:focus {
+    border-color: inherit;
+}
+
+.nice-select.comments-select .current {
+    font-size: 13px;
+}
+
+.nice-select.comments-select .list {
+    padding: 10px 0;
+    left: inherit;
+    right: 0;
+    min-width: 100%;
+    box-shadow: none;
+    border: 1px solid #d0d0d0;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.nice-select.comments-select .option {
+    position: relative;
+    padding: 0 40px 0 15px;
+    height: 35px;
+    min-height: inherit;
+    font-size: 13px;
+    line-height: 33px;
+    background: #fff;
+}
+
+.nice-select.comments-select .option:hover,
+.nice-select.comments-select .option.selected {
+    background: #fff;
+}
+
+.nice-select.comments-select .option.selected {
+    font-weight: 400;
+}
+
+.nice-select.comments-select .option.selected:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #3ac900;
+    border-radius: 100%;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+    .comments {
+        padding: 30px 0;
+    }
+
+    .comment {
+        padding-left: 80px;
+    }
+
+    .comment__content {
+        padding-right: 0;
+    }
+
+    .comment__reply {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .comment {
+        padding-left: 0;
+    }
+
+    .comment .comment {
+        padding-left: 20px;
+    }
+
+    .comment__author-foto-wrap {
+        left: inherit;
+        left: 0;
+        top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .comment__header {
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+    .comment__textarea ~ .comment-btn {
+        position: relative;
+        top: 0;
+        transform: none;
+        margin: 10px auto 0;
+    }
+
+    .show-more-comments-btn {
+        margin: 30px 0 0;
+    }
+}
+.footer-info {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 125px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rights {
+    max-width: 205px;
+}
+
+.rights p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666;
+}
+
+.bbb-rating,
+.authorize,
+.paypal {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social {
+    font-size: 0;
+}
+
+.social__block {
+    margin-bottom: 10px;
+}
+
+.social__block span,.social__block amp-social-share {
+    display: inline-block;
+    margin: 0 14px 8px 0;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 700;
+    color: #838383;
+    text-transform: uppercase;
+}
+
+.social__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 16px 8px 0;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #afadad;
+    color: #fff;
+}
+
+.social__icon:last-of-type {
+    margin-right: 0;
+}
+
+.social__icon:hover {
+    background: #58bbe4;
+    color: #000;
+}
+
+.social__icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 14px;
+    color:#fff;
+}
+
+.services__link {
+    display: inline-block;
+    color: #c2c2c2;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.services__link_footer {
+    font-size: 13px;
+    color: #666;
+    margin: 0 15px 0 0;
+}
+
+.services__link_footer:last-of-type {
+    margin-right: 0;
+}
+
+a.services__link:hover,
+a.services__link.active {
+    color: #58bbe4;
+}
+
+p.services__link {
+    max-width: 165px;
+}
+
+@media only screen and (max-width: 900px) {
+    .footer-info {
+        display: block;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .rights {
+        max-width: inherit;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rights p {
+        line-height: 22px;
+    }
+
+    .bbb-rating,
+  .authorize,
+  .paypal {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-logo table {
+        margin: 0 auto;
+    }
+}
+
+
+</style>
+<!-- /Styles -->
+
+<script id="amp-access" type="application/json">
+    {
+        "authorization": "https://ampbyexample.com/samples_templates/comment_section/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM",
+        "noPingback": "true",
+        "login": {
+          "sign-in": "https://ampbyexample.com/samples_templates/comment_section/login?rid=READER_ID",
+          "sign-out": "https://ampbyexample.com/samples_templates/comment_section/logout?rid=READER_ID"
+        },
+        "authorizationFallbackResponse": {
+            "error": true,
+            "loggedIn": false
+        }
+    }
+</script>
+
+</head>
+
+<body>
+
+    <div id="top-page"></div> 
+
+    <div class="header-container stickyMenu">
+    <!--Header -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__header">
+            <button class="mobile-menu__btn menu-btn" role="button" on="tap:sidebar.open">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <a href="#" class="mobile-menu__logo">
+                <amp-img src="img/server/logo.svg" alt="Welcome" height="40" width="400"></amp-img>
+            </a>
+            <a href="#" class="mobile-menu__search-link">
+            <i class="fa fa-search header-icon" aria-hidden="true"></i>
+        </a>
+        </div>
+    </div>
+    <!-- /Header -->
+</div>
+
+<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <div class="mobile-menu__nav">
+        <button on="tap:sidebar.close" role="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <div class="mobile-menu__row">
+            <button class="mobile-menu__link" on="tap:my-lightbox" role="button" tabindex="0">
+                <i class="fa fa-user header-icon" aria-hidden="true"></i>
+                Hello, 
+                <span class="blue-text">Sign In</span>
+            </button>
+        </div>
+        <div class="mobile-menu__row">
+            <ul class="mobile-menu__nav-list">
+                <li><a href="" class="mobile-menu__link active">News</a></li>
+                <li><a href="" class="mobile-menu__link">Xbox One</a></li>
+                <li><a href="" class="mobile-menu__link">Playstation 4</a></li>
+                <li><a href="" class="mobile-menu__link">PC</a></li>
+                <li><a href="" class="mobile-menu__link">Games</a></li>
+                <li><a href="" class="mobile-menu__link">Gadgets</a></li>
+                <li><a href="" class="mobile-menu__link">Store</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu__row">
+            <p class="mobile-menu__row-descr">Want To Wright For Us?</p>
+            <a href="" class="mobile-menu__link">Contact Us</a>
+        </div>
+        <div class="mobile-menu__row">
+            <span class="mobile-menu__social">
+                <a href="" class="mobile-menu__social-link"><i class="fa fa-twitter header-icon" aria-hidden="true"></i></a>
+                <a href="" class="mobile-menu__social-link"><i class="fa fa-facebook header-icon" aria-hidden="true"></i></a>
+                <a href="" class="mobile-menu__social-link"><i class="fa fa-youtube-play header-icon" aria-hidden="true"></i></a>
+            </span>
+        </div>
+        <div class="mobile-menu__row">
+            <a href="" class="mobile-menu__link">
+                <i class="fa fa-user header-icon" aria-hidden="true"></i>
+                New? 
+                <span class="blue-text">Register</span>
+            </a>
+        </div>
+    </div>
+</amp-sidebar>
+
+
+<!-- Login Form -->
+<amp-lightbox id="my-lightbox" layout="nodisplay">
+  <div class="lightbox"
+    role="button"
+    tabindex="0">
+    <amp-selector role="tablist"
+          layout="container"
+          class="login-form">
+
+            <div class="login-form__header">
+                <a href="" class="login-form__logo"><amp-img src="img/server/login-form-logo.svg?" alt="Logo" height="30" width="300"></amp-img></a>
+                <button on="tap:my-lightbox.close" role="button" class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="login-form__content">
+
+                <button class="btn btn_inline btn_gray login-form__btn tabButton" role="tab" selected option="a">Register</button>
+                <div class="tabContent login-form__tabContent" role="tabpanel">
+                    <form method="post"
+                          action-xhr="https://example.com/subscribe"
+                          target="_top"
+                          id="sing-in-form">
+                        <div class="form__row form__row_border form__row_login">
+                            <div class="form__input">
+                                <label for="email" class="form-label reqired">Email</label>
+                                <input type="email" id="email" placeholder="Bill.Smith@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="pas" class="form-label reqired">Password</label>
+                                <input type="text" id="pas" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_border form__row_login">
+                            <div class="form__input">
+                                <label for="re-pas" class="form-label reqired">Re-enter <br> Password</label>
+                                <input type="text" id="re-pas" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="first-name" class="form-label reqired">First Name</label>
+                                <input type="text" id="first-name">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="last-name" class="form-label reqired">Last Name</label>
+                                <input type="text" id="last-name">
+                            </div>
+                        </div>
+                        <div class="cf login-form__footer">
+                            <button type="submit" class="btn btn_gray btn_gray_active btn_inline">Register</button>
+                        </div>
+                    </form>
+                </div>
+
+                <button class="btn btn_inline login-form__btn sing-in-btn tabButton" role="tab" option="b">Sign In</button>
+                <div class="tabContent login-form__tabContent" role="tabpanel">
+                    <form method="post"
+                    action-xhr="https://example.com/subscribe"
+                    target="_top" 
+                    id="sing-in-form">
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="sing-in-email" class="form-label reqired">Email</label>
+                                <input type="text" id="sing-in-email" placeholder="Bill.Smith@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_border form__row_login">
+                            <div class="form__input">
+                                <label for="sing-in-pas" class="form-label reqired">Password</label>
+                                <input type="text" id="sing-in-pas" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="cf login-form__footer">
+                            <div class="checkbox">
+                                <input type="checkbox" id="remember">
+                                <label for="remember" class="checkbox__mask"></label>
+                                <label for="remember" class="checkbox__label">Remember?</label>
+                            </div>
+                            <button type="submit" class="btn btn_gray btn_gray_active btn_inline login-form__btn fl-right">Enter</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </amp-selector>
+  </div>
+</amp-lightbox>
+
+<!-- /Login Form -->
+
+    <!-- Breadcrumbs -->
+<div class="breadcrumbs container-short">
+    <a href="#">Home</a>
+</div>
+<!-- /Breadcrumbs -->
+
+     <!-- Article -->
+    <div class="article">
+
+        <div class="container-short">
+
+            <!-- Article header -->
+
+            <div class="article__header">
+                <h1 class="article__title title-marker title-marker_xbox-one">Pioneer’s autonomous driving tech includes LiDAR and driver monitors</h1>
+                <p class="article__descr">Pioneer aims to create LiDAR that is better than conventional LiDAR at detecting faraway objects, dark objects and objects among snow and rainfall.</p>
+                <span class="article-marker article-marker_article article-marker_wide"></span>
+            </div>
+
+            <!--/ Article header -->
+
+            <!-- Article Content -->
+
+            <div class="content">
+
+                <p>Pioneer is also developing four types of LiDAR and is working on LiDAR systems that are more compact and low-cost. Additionally, by combining digital signal processing and prior object recognition, Pioneer aims to create LiDAR that is better than conventional LiDAR at detecting faraway objects, dark objects and objects among snow and rainfall.</p>
+                <p>Further, Pioneer's Head-Up Display aims to convey information to drivers with quality images featuring higher contrast, extended color gamut, better brightness and minimized distortion. And Pioneer has partnered with Here in its efforts to create a global standard for mapping data.</p>
+                <p>Pioneer might not be a company you expected to jump into the autonomous driving scene, but with nearly every automaker and transportation company aiming to get their own versions of self-driving vehicles on the road in the next few years, these sorts of accessories are probably a smart direction in which to move.</p>
+                <h2>Customisation station</h2>
+                
+                <!-- SliderPro -->
+
+                 <amp-carousel id="carousel-with-carousel-preview"
+    width="460"
+    height="300"
+    layout="responsive"
+    type="slides">
+    <amp-img src="img/server/article-col-img5.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img>
+    <amp-img src="img/server/article-col-img3.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img>
+    <amp-img src="img/server/article-col-img5.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img>
+    <amp-img src="img/server/article-col-img3.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img><amp-img src="img/server/article-col-img5.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img>
+    <amp-img src="img/server/article-col-img3.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img><amp-img src="img/server/article-col-img5.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img>
+    <amp-img src="img/server/article-col-img3.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img><amp-img src="img/server/article-col-img5.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img>
+    <amp-img src="img/server/article-col-img3.png"
+      width="460"
+      height="300"
+      layout="responsive"
+      alt="a sample image"></amp-img>
+  </amp-carousel>
+  <amp-carousel class="carousel-preview"
+    width="auto"
+    height="48"
+    layout="fixed-height"
+    type="carousel">
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=0)">
+      <amp-img src="img/server/article-col-img5.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=1)">
+      <amp-img src="img/server/article-col-img3.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button><button on="tap:carousel-with-carousel-preview.goToSlide(index=0)">
+      <amp-img src="img/server/article-col-img5.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=1)">
+      <amp-img src="img/server/article-col-img3.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=0)">
+      <amp-img src="img/server/article-col-img5.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=1)">
+      <amp-img src="img/server/article-col-img3.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=0)">
+      <amp-img src="img/server/article-col-img5.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=1)">
+      <amp-img src="img/server/article-col-img3.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=0)">
+      <amp-img src="img/server/article-col-img5.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+    <button on="tap:carousel-with-carousel-preview.goToSlide(index=1)">
+      <amp-img src="img/server/article-col-img3.png"
+        width="60"
+        height="40"
+        layout="responsive"
+        alt="a sample image"></amp-img>
+    </button>
+  </amp-carousel>
+                
+                <!-- //SliderPro -->
+                
+                <p>Pioneer is also developing four types of LiDAR and is working on LiDAR systems that are more compact and low-cost. Additionally, by combining digital signal processing and prior object recognition, Pioneer aims to create LiDAR that is better than conventional LiDAR at detecting faraway objects, dark objects and objects among snow and rainfall.</p>
+                <p>Further, Pioneer's Head-Up Display aims to convey information to drivers with quality images featuring higher contrast, extended color gamut, better brightness and minimized distortion. And Pioneer has partnered with Here in its efforts to create a global standard for mapping data.</p>
+
+                <!-- Article big img -->
+
+                    <amp-img src="img/server/article-bi-img.png" class="article__big-img" width="1280" height="600" layout="responsive" alt="big image"></amp-img>
+
+                 <!-- /Article big img -->
+    
+                <h2>Pioneer’s autonomous driving tech includes LiDAR and driver monitors</h2>
+                <p>With the demonstration of its Advanced UX Cockpit -- Pioneer's Level 3 autonomous driving system concept -- Pioneer displays three features it says will be important as self-driving vehicles enter the market. The first is its Driver Monitoring System, which will keep track of a driver's attentiveness through a facial recognition camera, heart rate monitor, steering wheel sensor, seat sensor and seat vibration feature. Pioneer's Sensory UI, on the other hand, will help prepare a driver to take over for the automated system by using features aimed a stimulating their senses.</p>
+                <p>A driver display and dash LED will provide visual stimulation, seat vibration and active feely -- a feature that changes the shape of the steering wheel padding -- will provide touch information and a fragrance UI will offer a bit of aroma to help the transition from passenger to driver. Lastly, entertainment will be key when drivers have less driving to do. In that regard, Pioneer is also demonstrating a multimedia display, a sound and aroma generator and automated seat position control.</p>
+
+                <h3>Pioneer’s autonomous driving tech includes LiDAR and driver monitors</h3>
+                <p>With the demonstration of its Advanced UX Cockpit -- Pioneer's Level 3 autonomous driving system concept -- Pioneer displays three features it says will be important as self-driving vehicles enter the market. The first is its Driver Monitoring System, which will keep track of a driver's attentiveness through a facial recognition camera, heart rate monitor, steering wheel sensor, seat sensor and seat vibration feature. Pioneer's Sensory UI, on the other hand, will help prepare a driver to take over for the automated system by using features aimed a stimulating their senses.</p>
+
+                <h4>Pioneer’s autonomous driving tech includes LiDAR and driver monitors</h4>
+                <p class="small">With the demonstration of its Advanced UX Cockpit -- Pioneer's Level 3 autonomous driving system concept -- Pioneer displays three features it says will be important as self-driving vehicles enter the market. The first is its Driver Monitoring System, which will keep track of a driver's attentiveness through a facial recognition camera, heart rate monitor, steering wheel sensor, seat sensor and seat vibration feature. Pioneer's Sensory UI, on the other hand, will help prepare a driver to take over for the automated system by using features aimed a stimulating their senses.</p>
+                
+            </div>
+
+            <!-- /Article Content -->
+            
+        </div>
+
+    </div>
+    <!-- /Article -->
+    <!-- Article tags -->
+
+    <div class="content-row">
+        <div class="container-short">
+            <p class="descr-text">In this Article:</p>
+            <ul class="tag-list">
+                <li><a href="" class="tag-list__link">Av</a></li>
+                <li><a href="" class="tag-list__link">Ces2018</a></li>
+                <li><a href="" class="tag-list__link">Entertainment</a></li>
+                <li><a href="" class="tag-list__link">Nextvr</a></li>
+                <li><a href="" class="tag-list__link">Vr</a></li>
+                <li><a href="" class="tag-list__link">Wearables</a></li>
+                <li><a href="" class="tag-list__link">Wrestling</a></li>
+                <li><a href="" class="tag-list__link">Wwe</a></li>
+            </ul>
+           <p class="descr-text descr-text_tag">Share VIA Social Media Pages:</p>
+<div class="social-block xbox-one-color">
+     <amp-social-share class="social-block__link" type="twitter" width="30" height="30"><i class="fa fa-twitter" aria-hidden="true"></i></amp-social-share>
+    
+     <amp-social-share class="social-block__link" type="facebook" width="30" height="30"><i class="fa fa-facebook" aria-hidden="true"></i></amp-social-share>
+     <amp-social-share type="gplus" class="social-block__link"  width="30" height="30"><i class="fa fa-google-plus" aria-hidden="true"></i></amp-social-share>
+
+     <amp-social-share class="social-block__link" type="email" width="30" height="30"><i class="fa fa-envelope" aria-hidden="true"></i></amp-social-share>
+</div> 
+        </div>
+    </div>
+    
+    <!-- /Article tags -->
+    
+    <!-- Article author -->
+
+    <div class="content-row">
+
+        <div class="container-short">
+            <div class="article-author">
+                <div class="article-author__header">
+                    <p class="article-author__title">About Author</p>
+                    <span class="article-author__img-wrap">
+                        <span class="article-author__img">
+                            <amp-img src="img/server/author-img-big.png"  width="108" height="108" alt="Article author"></amp-img>
+                        </span>
+                    </span>
+                    <span class="article-author__name">Ben Thorp</span>
+                </div>
+
+                <div class="article-author__info cf">
+                    <p>With the demonstration of its Advanced UX Cockpit -- Pioneer's Level 3 autonomous driving system concept -- Pioneer displays three features it says will be important as self-driving vehicles enter the market. The first is its Driver Monitoring System, which will keep track of a driver's attentiveness through a facial recognition camera, heart rate monitor, steering wheel sensor, seat sensor and seat vibration feature.</p>
+                    <div class="article-author__social">
+                        <div class="social-block xbox-one-color social-block_article-author">
+                           <amp-social-share class="social-block__link" type="twitter" width="30" height="30"><i class="fa fa-twitter" aria-hidden="true"></i></amp-social-share>
+    
+                             <amp-social-share class="social-block__link" type="facebook" width="30" height="30"><i class="fa fa-facebook" aria-hidden="true"></i></amp-social-share>
+
+                             <amp-social-share class="social-block__link" type="email" width="30" height="30"><i class="fa fa-envelope" aria-hidden="true"></i></amp-social-share>
+                        </div>
+                        <p class="article-author__social-descr">I’d love it if you followed me on Twitter and Facebook. Also feel free to subscribe to my posts by  email. Thanks for reading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- /Article author --> 
+
+     <!-- Articles-slider -->
+
+    <div class="content-row">
+
+        <div class="articles-slider-header container-short">
+            <h3 class="articles-slider-title">Trending Right Now</h3>
+        </div>
+        <amp-carousel id="carusel2" class="articles-slider" height="335" layout="fixed-height" type="carousel" loop>
+
+            <div class="articles-slider__item article-slide">
+                <a href="" class="article-slide__img">
+                    <amp-img src="img/server/article-slide-img2.png"  width="225" height="160" alt="slide"></amp-img>
+                </a>
+                <div class="article-slide__content">
+                    <a href="" class="article-slide__title">
+                    <amp-fit-text height="65" layout="fixed-height" min-font-size="24">Super Mario Cereal is perfectly edible1
+                    </a>
+                    <p class="article-slide__text">Advanced Controller Creator is a multi-functional platform that <span class="article-marker article-marker_small article-marker_ps4"></span></p>
+                    <div class="article-slide__author-content">
+                        <p class="article-slide__author-name">By <strong>John Malkovich</strong></p>
+                        <span class="article-slide__data">March 5, 2017</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="articles-slider__item article-slide">
+                <a href="" class="article-slide__img">
+                    <amp-img src="img/server/article-slide-img2.png" width="225" height="160" alt="slide"></amp-img>
+                </a>
+                <div class="article-slide__content">
+                    <a href="" class="article-slide__title">Super Mario Cereal is perfectly edible1</a>
+                    <p class="article-slide__text">Advanced Controller Creator is a multi-functional platform that <span class="article-marker article-marker_small article-marker_ps4"></span></p>
+                    <div class="article-slide__author-content">
+                        <p class="article-slide__author-name">By <strong>John Malkovich</strong></p>
+                        <span class="article-slide__data">March 5, 2017</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles-slider__item article-slide">
+                <a href="" class="article-slide__img">
+                    <amp-img src="img/server/article-slide-img3.png"  width="225" height="160" alt="slide"></amp-img>
+                </a>
+                <div class="article-slide__content">
+                    <a href="" class="article-slide__title">Super Mario Cereal is perfectly edible1</a>
+                    <p class="article-slide__text">Advanced Controller Creator is a multi-functional platform that <span class="article-marker article-marker_small article-marker_ps4"></span></p>
+                    <div class="article-slide__author-content">
+                        <p class="article-slide__author-name">By <strong>John Malkovich</strong></p>
+                        <span class="article-slide__data">March 5, 2017</span>
+                    </div>
+                </div>
+            </div>
+            <div class="articles-slider__item article-slide">
+                <a href="" class="article-slide__img">
+                    <amp-img src="img/server/article-slide-img2.png"  width="225" height="160" alt="slide"></amp-img>
+                </a>
+                <div class="article-slide__content">
+                    <a href="" class="article-slide__title">
+                    <amp-fit-text height="65" layout="fixed-height" min-font-size="24">Super Mario Cereal is perfectly edible1
+                    </a>
+                    <p class="article-slide__text">Advanced Controller Creator is a multi-functional platform that <span class="article-marker article-marker_small article-marker_ps4"></span></p>
+                    <div class="article-slide__author-content">
+                        <p class="article-slide__author-name">By <strong>John Malkovich</strong></p>
+                        <span class="article-slide__data">March 5, 2017</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="articles-slider__item article-slide">
+                <a href="" class="article-slide__img">
+                    <amp-img src="img/server/article-slide-img2.png" width="225" height="160" alt="slide"></amp-img>
+                </a>
+                <div class="article-slide__content">
+                    <a href="" class="article-slide__title">Super Mario Cereal is perfectly edible1</a>
+                    <p class="article-slide__text">Advanced Controller Creator is a multi-functional platform that <span class="article-marker article-marker_small article-marker_ps4"></span></p>
+                    <div class="article-slide__author-content">
+                        <p class="article-slide__author-name">By <strong>John Malkovich</strong></p>
+                        <span class="article-slide__data">March 5, 2017</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles-slider__item article-slide">
+                <a href="" class="article-slide__img">
+                    <amp-img src="img/server/article-slide-img3.png"  width="225" height="160" alt="slide"></amp-img>
+                </a>
+                <div class="article-slide__content">
+                    <a href="" class="article-slide__title">Super Mario Cereal is perfectly edible1</a>
+                    <p class="article-slide__text">Advanced Controller Creator is a multi-functional platform that <span class="article-marker article-marker_small article-marker_ps4"></span></p>
+                    <div class="article-slide__author-content">
+                        <p class="article-slide__author-name">By <strong>John Malkovich</strong></p>
+                        <span class="article-slide__data">March 5, 2017</span>
+                    </div>
+                </div>
+            </div>
+            
+        </amp-carousel>
+
+    </div>
+
+    <!-- /Articles-slider --> 
+    
+    <!-- Use `amp-list` to render existing comments to make sure that the latest comments appear if the page is loaded via AMP Cache.  -->
+<div class="comments">
+    <div class="container-short">
+        <h3 class="comments__title">Comments</h3>
+        <div class="comments__header">
+            <div class="comments__count">2<small>Comments</small></div>
+            <span amp-access="NOT loggedIn" role="button" tabindex="0" amp-access-hide>
+                  <button on="tap:amp-access.login-sign-in" class="btn btn_gray comment-btn">Sing In</button>
+            </span>
+
+            <span amp-access="loggedIn" role="button" tabindex="0" amp-access-hide>
+                <button on="tap:amp-access.login-sign-out" class="btn btn_gray comment-btn">Logout</button>
+            </span>
+
+        </div>
+
+        <div class="comments__select-wrap">
+            <span>Sort by</span>
+            <select name="" id="" class="comments-select">
+                <option value="">Best</option>
+                <option value="">Newest</option>
+                <option value="">Oldest</option>
+            </select>
+        </div>
+
+        <amp-list  width="auto" height="250" layout="fixed-height" src="https://ampbyexample.com/json/comments.json">
+            <template type="amp-mustache">
+
+                <div class="comment">
+                    <div class="comment__header">
+                        <div class="comment__author-foto-wrap">
+                            <span class="comment__author-foto">
+                                <amp-img width="58" height="58" layout="responsive" class="mr1 flex-none" alt="user" src="img/server/author1.svg"></amp-img>
+                            </span>
+                        </div>
+                        <div class="comment__info">
+                            <span class="comment__author-name"><strong>{{user}}</strong></span>
+                            <span class="comment__date">{{datetime}}</span>
+                        </div>
+                    </div>
+                    <div class="comment__content">
+                        <p>{{text}}</p>
+                        <div class="comment__reply">
+                                 <button class="btn btn_gray reply-btn">Reply</button>
+                            <div class="like">
+                                <span class="dislike-icon">
+                                    <amp-img width="18" height="16" alt="dislike" src="img/server/dislike.svg"></amp-img>
+                                </span>
+                                <span class="like__count">12</span>
+                                <span class="like-icon">
+                                    <amp-img width="18" height="16" alt="like" src="img/server/like.svg"></amp-img>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </template>
+        </amp-list>
+        
+        <form amp-access="loggedIn" amp-access-hide method="post" action-xhr="https://ampbyexample.com/samples_templates/comment_section/submit-comment-xhr?" target="_top">
+        
+        <div submit-success>
+          <template type="amp-mustache">
+            <div class="comment">
+                    <div class="comment__header">
+                        <div class="comment__author-foto-wrap">
+                            <span class="comment__author-foto">
+                                <amp-img width="58" height="58" layout="responsive" class="mr1 flex-none" alt="user" src="img/server/author1.svg"></amp-img>
+                            </span>
+                        </div>
+                        <div class="comment__info">
+                            <span class="comment__author-name"><strong>{{user}}</strong></span>
+                            <span class="comment__date">{{datetime}}</span>
+                        </div>
+                    </div>
+                    <div class="comment__content">
+                        <p>{{text}}</p>
+                        <div class="comment__reply" >
+                            <button class="btn btn_gray reply-btn">Reply</button>
+                            <div class="like">
+                                <span class="dislike-icon">
+                                    <amp-img width="18" height="16" alt="dislike" src="img/server/dislike.svg"></amp-img>
+                                </span>
+                                <span class="like__count">12</span>
+                                <span class="like-icon">
+                                    <amp-img width="18" height="16" alt="like" src="img/server/like.svg"></amp-img>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+          </template>
+        </div>
+
+        <div class="comment">
+            <div class="comment__header">
+                <div class="comment__author-foto-wrap">
+                    <span class="comment__author-foto">
+                        <amp-img width="58" height="58" layout="responsive" class="mr1 flex-none" alt="user" src="img/server/author1.svg"></amp-img>
+                    </span>
+                </div>
+                <textarea name="" id=""  class="comment__textarea" placeholder="Be the first to comment…"></textarea>
+                <button type="submit" class="btn btn_gray comment-btn">Post</button>
+
+            </div>
+            <a href="" class="btn btn_gray show-more-comments-btn">
+                <span><amp-img width="19" height="19" alt="user" src="img/server/chat-icon.svg"></amp-img>Show More Comments…</span>
+            </a>
+        </div>
+        
+
+        <div submit-error>
+          <template type="amp-mustache">
+            <p class="form-descr-text error">Error! Looks like something went wrong with your comment, please try to submit it again. {{error}}</p>
+          </template>
+        </div>
+
+      </form>
+
+    </div>
+</div>
+
+
+
+    <!--Footer menu -->
+<div class="footer-container">
+    <div class="footer-menu @@category">
+        <a href="#" class="footer-menu__logo">
+            <amp-img src="img/server/logo.svg" alt="Logo" height="30" width="302" sizes="(max-width: 768px) 302px, 202px"></amp-img>
+        </a>
+
+            <ul class="nav-menu nav-menu_footer">
+                <li><a href="" class="nav-menu__link"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Store</a></li>
+                <li ><a href="" class="nav-menu__link">What To Write For Us?</a></li>
+                <li><a href="" class="nav-menu__link">Contact Us</a></li>
+                <li><a href="" class="nav-menu__link">Sign Up For The Newsletter</a></li>
+            </ul>
+
+        <div class="back-top-btn">
+            <button class="back-top-btn" id="scrollToTopButton" on="tap:top-page.scrollTo(duration=500)" >
+            <span class="back-top-icon-mobile">
+                <amp-img src="img/server/top-arrow-mobile.svg" alt="Welcome" height="34" width="34"></amp-img>
+            </span>
+        </div>
+    </div>
+</div>
+<!-- /Footer menu -->
+    <footer>
+    <div class="footer-info">
+        <div class="rights">
+            <p>2011—2018 © MegaModzPlanet</p>
+            <p>All rights reserved</p>
+        </div>
+        <a target="_blank" href="https://www.bbb.org/south-east-florida/business-reviews/video-games-supplies-and-parts/mats-tech-in-dania-fl-90051737#sealclick" class="bbb-rating">
+            <amp-img src="img/server/bbb.png" alt="Stripe" height="73" width="150"></amp-img>
+        </a>
+        <div class="footer-logo">
+            <a href="https://stripe.com" target="_blank" rel="nofollow">
+                <amp-img src="img/server/stripe.png" alt="Stripe" height="35" width="80"></amp-img>
+            </a>
+        </div>
+        <div class="footer-logo">
+            <!-- PayPal Logo -->
+            <table border="0" cellpadding="10" cellspacing="0" align="center">
+                <tbody>
+                    <tr>
+                        <td align="center"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <a href="https://www.paypal.com/ru/webapps/mpp/paypal-popup">
+                               <amp-img src="img/server/pp-logo-100px.png" alt="PayPal" height="26" width="100"></amp-img>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- PayPal Logo -->
+        </div>
+        <div class="social">
+            <div class="social__block">
+                <span>social</span>
+                <amp-social-share class="social__icon" type="facebook" width="25" height="25"><i class="fa fa-facebook" aria-hidden="true"></i></amp-social-share>
+                 <amp-social-share class="social__icon" type="linkedin" width="25" height="25"><i class="fa fa-instagram" aria-hidden="true"></i></amp-social-share>
+
+                 <amp-social-share class="social__icon" type="twitter" width="25" height="25"><i class="fa fa-twitter" aria-hidden="true"></i></amp-social-share>
+            </div>
+            <a href="https://megamodzplanet.com/privacy" class="services__link services__link_footer ">Privacy Statement</a>
+            <a href="https://megamodzplanet.com/terms-of-use" class="services__link services__link_footer ">Terms Of Use</a>
+            <a href="https://megamodzplanet.com/sitemap" class="services__link services__link_footer ">Sitemap</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

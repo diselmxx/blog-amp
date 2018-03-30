@@ -1,0 +1,34 @@
+@@include('head.html', { "title": "main-page" })
+
+<!-- Styles -->
+<style amp-custom>
+@@include('fonts.html')
+@@include('baseCSS.html')
+@@include('CSS-header.html')
+@@include('CSS-breadcrumbs.html')
+@@include('CSS-articles-preview.html')
+@@include('CSS-category-header.html')
+@@include('CSS-tag-list.html')
+@@include('CSS-info-block.html')
+@@include('CSS-footer.html')
+
+</style>
+<!-- /Styles -->
+
+</head>
+
+<body>
+    <div id="top-page"></div> 
+
+    @@include('header.html')
+    @@include('breadcrumbs.html')
+    <div class="container-short">
+        @@include('category-header.html')
+        @@include('articles.html')
+    </div>
+    @@include('footer-menu.html')
+    @@include('footer.html')
+
+</body>
+
+</html>

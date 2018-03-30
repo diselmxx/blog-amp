@@ -1,0 +1,90 @@
+.controller-slider-container {
+    padding: 30px 20px;
+    background: url("../img/server/controller-slider-wrap-bg.png") no-repeat center center;
+    background-size: cover;
+}
+.controller-slider-wrap {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    max-width: 615px;
+    margin: 0 auto;
+}
+.controller-slider-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.controller-slider {
+    width: 100%;
+}
+.controller-slider__item {
+    width: 100%;
+}
+.controller-slider {
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+.controller-slide__img {
+    flex: none;
+    display: inline-block;
+}
+.controller-slide__title {
+    width: 100%;
+    color: #fff;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+.controller-slider-btn {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 0;
+}
+.controller-slider-next-btn {
+    transform: rotate(-180deg);
+}
+.controller-slider-wrap .amp-carousel-button {
+    display: block;
+    position: absolute;
+    background-size: 32px 32px;
+    cursor: pointer;
+    background-color:transparent;
+}
+.controller-slider-wrap .amp-carousel-button.amp-carousel-button-prev  {
+    visibility: visible;
+    opacity: 1;
+    left: 50%;
+    transform: translate(-40px,-50%);
+    bottom:-18px;
+    top:inherit;
+    background-image: url('img/server/slider-arrow-left.svg');
+}
+.controller-slider-wrap .amp-carousel-button.amp-carousel-button-next {
+    visibility: visible;
+    opacity: 1;
+    right: 50%;
+    transform: translate(40px,-50%);
+    bottom:-18px;
+    top:inherit;
+    background-image: url('img/server/slider-arrow-right.svg');
+}
+.controller-slide .slide-btn {
+    display: none;
+}
+.controller-slide__img amp-img {
+    margin: 0;
+}
+.controller-slide__content {
+    display: flex;
+    height: 107px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

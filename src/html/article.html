@@ -1,0 +1,80 @@
+@@include('head.html', { "title": "main-page" })
+
+<!-- Styles -->
+<style amp-custom>
+@@include('fonts.html')
+@@include('baseCSS.html')
+@@include('CSS-header.html')
+@@include('CSS-breadcrumbs.html')
+@@include('CSS-category-header.html')
+@@include('CSS-article-author.html')
+@@include('CSS-article-slider.html')
+@@include('CSS-article.html')
+@@include('CSS-slider-pro.html')
+@@include('CSS-tag-list.html')
+@@include('CSS-social-block.html')
+@@include('CSS-comments.html')
+@@include('CSS-footer.html')
+
+
+</style>
+<!-- /Styles -->
+
+<script id="amp-access" type="application/json">
+    {
+        "authorization": "https://ampbyexample.com/samples_templates/comment_section/authorization?rid=READER_ID&url=CANONICAL_URL&ref=DOCUMENT_REFERRER&_=RANDOM",
+        "noPingback": "true",
+        "login": {
+          "sign-in": "https://ampbyexample.com/samples_templates/comment_section/login?rid=READER_ID",
+          "sign-out": "https://ampbyexample.com/samples_templates/comment_section/logout?rid=READER_ID"
+        },
+        "authorizationFallbackResponse": {
+            "error": true,
+            "loggedIn": false
+        }
+    }
+</script>
+
+</head>
+
+<body>
+
+    <div id="top-page"></div> 
+
+    @@include('header.html')
+    @@include('breadcrumbs.html')
+
+    @@include('article.html')
+    <!-- Article tags -->
+
+    <div class="content-row">
+        <div class="container-short">
+            <p class="descr-text">In this Article:</p>
+            <ul class="tag-list">
+                <li><a href="" class="tag-list__link">Av</a></li>
+                <li><a href="" class="tag-list__link">Ces2018</a></li>
+                <li><a href="" class="tag-list__link">Entertainment</a></li>
+                <li><a href="" class="tag-list__link">Nextvr</a></li>
+                <li><a href="" class="tag-list__link">Vr</a></li>
+                <li><a href="" class="tag-list__link">Wearables</a></li>
+                <li><a href="" class="tag-list__link">Wrestling</a></li>
+                <li><a href="" class="tag-list__link">Wwe</a></li>
+            </ul>
+           @@include('social-block.html') 
+        </div>
+    </div>
+    
+    <!-- /Article tags -->
+    
+    @@include('article-author.html') 
+
+    @@include('article-slider.html') 
+    
+    @@include('comments.html')
+
+    @@include('footer-menu.html')
+    @@include('footer.html')
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+.articles-slider {
+    position: relative;
+    width: 100%;
+    padding:0 20px;
+}
+
+.article-slide {
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 225px;
+    height: 335px;
+    border: 1px solid #d0d0d0;
+    overflow: hidden;
+}
+
+.article-slide:hover .article-slide__img img {
+    transform: scale(1.05);
+}
+
+.articles-slider-header {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.articles-slider-title {
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.93px;
+}
+
+.articles-slider-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.articles-slider-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.articles-slider-next-btn {
+    transform: rotate(180deg);
+}
+
+.article-slide__img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.article-slide__img img {
+    transition: 0.6s;
+    width: 100%;
+}
+
+.article-slide__content {
+    position: relative;
+    padding: 13px 13px 50px;
+    overflow: hidden;
+    height: 173px;
+    white-space: normal;
+}
+
+.article-slide__title {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: -0.37px;
+}
+
+.article-slide__text {
+    margin-bottom: 10px;
+    color: #707070;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.article-slide__author-content {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+}
+
+.article-slide__author-name {
+    margin-bottom: 3px;
+    color: #4a4a4a;
+    font-size: 15px;
+    letter-spacing: -0.58px;
+}
+
+.article-slide__data {
+    color: #4a4a4a;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+

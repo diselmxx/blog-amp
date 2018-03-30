@@ -1,0 +1,154 @@
+<div class="header-container stickyMenu">
+    <!--Header -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__header">
+            <button class="mobile-menu__btn menu-btn" role="button" on="tap:sidebar.open">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <a href="#" class="mobile-menu__logo">
+                <amp-img src="img/server/logo.svg" alt="Welcome" height="40" width="400"></amp-img>
+            </a>
+            <a href="#" class="mobile-menu__search-link">
+            <i class="fa fa-search header-icon" aria-hidden="true"></i>
+        </a>
+        </div>
+    </div>
+    <!-- /Header -->
+</div>
+
+<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <div class="mobile-menu__nav">
+        <button on="tap:sidebar.close" role="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <div class="mobile-menu__row">
+            <button class="mobile-menu__link" on="tap:my-lightbox" role="button" tabindex="0">
+                <i class="fa fa-user header-icon" aria-hidden="true"></i>
+                Hello, 
+                <span class="blue-text">Sign In</span>
+            </button>
+        </div>
+        <div class="mobile-menu__row">
+            <ul class="mobile-menu__nav-list">
+                <li><a href="" class="mobile-menu__link active">News</a></li>
+                <li><a href="" class="mobile-menu__link">Xbox One</a></li>
+                <li><a href="" class="mobile-menu__link">Playstation 4</a></li>
+                <li><a href="" class="mobile-menu__link">PC</a></li>
+                <li><a href="" class="mobile-menu__link">Games</a></li>
+                <li><a href="" class="mobile-menu__link">Gadgets</a></li>
+                <li><a href="" class="mobile-menu__link">Store</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu__row">
+            <p class="mobile-menu__row-descr">Want To Wright For Us?</p>
+            <a href="" class="mobile-menu__link">Contact Us</a>
+        </div>
+        <div class="mobile-menu__row">
+            <span class="mobile-menu__social">
+                <a href="" class="mobile-menu__social-link"><i class="fa fa-twitter header-icon" aria-hidden="true"></i></a>
+                <a href="" class="mobile-menu__social-link"><i class="fa fa-facebook header-icon" aria-hidden="true"></i></a>
+                <a href="" class="mobile-menu__social-link"><i class="fa fa-youtube-play header-icon" aria-hidden="true"></i></a>
+            </span>
+        </div>
+        <div class="mobile-menu__row">
+            <a href="" class="mobile-menu__link">
+                <i class="fa fa-user header-icon" aria-hidden="true"></i>
+                New? 
+                <span class="blue-text">Register</span>
+            </a>
+        </div>
+    </div>
+</amp-sidebar>
+
+
+<!-- Login Form -->
+<amp-lightbox id="my-lightbox" layout="nodisplay">
+  <div class="lightbox"
+    role="button"
+    tabindex="0">
+    <amp-selector role="tablist"
+          layout="container"
+          class="login-form">
+
+            <div class="login-form__header">
+                <a href="" class="login-form__logo"><amp-img src="img/server/login-form-logo.svg?" alt="Logo" height="30" width="300"></amp-img></a>
+                <button on="tap:my-lightbox.close" role="button" class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <div class="login-form__content">
+
+                <button class="btn btn_inline btn_gray login-form__btn tabButton" role="tab" selected option="a">Register</button>
+                <div class="tabContent login-form__tabContent" role="tabpanel">
+                    <form method="post"
+                          action-xhr="https://example.com/subscribe"
+                          target="_top"
+                          id="sing-in-form">
+                        <div class="form__row form__row_border form__row_login">
+                            <div class="form__input">
+                                <label for="email" class="form-label reqired">Email</label>
+                                <input type="email" id="email" placeholder="Bill.Smith@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="pas" class="form-label reqired">Password</label>
+                                <input type="text" id="pas" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_border form__row_login">
+                            <div class="form__input">
+                                <label for="re-pas" class="form-label reqired">Re-enter <br> Password</label>
+                                <input type="text" id="re-pas" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="first-name" class="form-label reqired">First Name</label>
+                                <input type="text" id="first-name">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="last-name" class="form-label reqired">Last Name</label>
+                                <input type="text" id="last-name">
+                            </div>
+                        </div>
+                        <div class="cf login-form__footer">
+                            <button type="submit" class="btn btn_gray btn_gray_active btn_inline">Register</button>
+                        </div>
+                    </form>
+                </div>
+
+                <button class="btn btn_inline login-form__btn sing-in-btn tabButton" role="tab" option="b">Sign In</button>
+                <div class="tabContent login-form__tabContent" role="tabpanel">
+                    <form method="post"
+                    action-xhr="https://example.com/subscribe"
+                    target="_top" 
+                    id="sing-in-form">
+                        <div class="form__row form__row_login">
+                            <div class="form__input">
+                                <label for="sing-in-email" class="form-label reqired">Email</label>
+                                <input type="text" id="sing-in-email" placeholder="Bill.Smith@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form__row form__row_border form__row_login">
+                            <div class="form__input">
+                                <label for="sing-in-pas" class="form-label reqired">Password</label>
+                                <input type="text" id="sing-in-pas" placeholder="***">
+                            </div>
+                        </div>
+                        <div class="cf login-form__footer">
+                            <div class="checkbox">
+                                <input type="checkbox" id="remember">
+                                <label for="remember" class="checkbox__mask"></label>
+                                <label for="remember" class="checkbox__label">Remember?</label>
+                            </div>
+                            <button type="submit" class="btn btn_gray btn_gray_active btn_inline login-form__btn fl-right">Enter</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </amp-selector>
+  </div>
+</amp-lightbox>
+
+<!-- /Login Form -->

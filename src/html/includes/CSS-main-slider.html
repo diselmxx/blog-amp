@@ -1,0 +1,103 @@
+
+.main-slider-wrap {
+    position: relative;
+}
+.main-slider {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.main-slider .slick-list,
+.main-slider .slick-track,
+.main-slider .main-slider__item,
+.main-slider .slide {
+    width: 100%;
+    height: 100%;
+}
+.main-slider__item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+.first-slide {
+    background-image: url('img/server/slider-item-bg.png');
+}
+.second-slide {
+    background-image: url('img/server/slider-item-bg.png');
+}
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slide__img {
+    text-align: right;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.slide__img img {
+    display: inline-block;
+}
+.slide__img,
+.slide__content {
+    padding: 0 20px;
+    width: auto;
+}
+.slide__content {
+    text-align: center;
+}
+.slide-title,
+.slide-descr {
+    display: block;
+    color: #fff;
+    font-family: 'Akzidenz-Grotesk Pro',sans-serif;
+    font-weight: 300;
+}
+.slide-title {
+    margin-bottom: 10px;
+    max-width: 420px;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: -0.67px;
+}
+.slide-descr {
+    margin: 0 auto 30px;
+    max-width: 360px;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.37px;
+}
+.main-slider-nav {
+    position: absolute;
+    bottom: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+    width: 90px;
+}
+.main-slider-wrap .amp-carousel-button {
+    display: block;
+    position: absolute;
+    background-size: 32px 32px;
+    cursor: pointer;
+    background-color:transparent;
+}
+.main-slider-wrap .amp-carousel-button.amp-carousel-button-prev {
+    visibility: visible;
+    opacity: 1;
+    left: 50%;
+    transform: translate(-40px,-50%);
+    bottom:20px;
+    top:inherit;
+    background-image: url('img/server/slider-arrow-left.svg');
+}
+.main-slider-wrap .amp-carousel-button.amp-carousel-button-next{
+    visibility: visible;
+    opacity: 1;
+    right: 50%;
+    transform: translate(40px,-50%);
+    bottom: 20px;
+    top: inherit;
+    background-image: url('img/server/slider-arrow-right.svg');
+}

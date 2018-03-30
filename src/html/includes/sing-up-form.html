@@ -1,0 +1,34 @@
+<!-- Sing up form -->
+<div class="sing-up-block">
+    <h2 class="sing-up-block__header">
+        <amp-img src="img/server/controller-singup-icon.svg" alt="" height="33" width="42"  class="sing-up-form__img"></amp-img>
+        <span>Sign up for the Newsletter</span>
+   </h2>
+    <div class="sing-up-form-wrap">
+        <span class="sing-up-form__decor-line"></span>
+        <form method="post" action-xhr="https://ampbyexample.com/components/amp-form/submit-form-input-text-xhr" target="_top" id="sing-up-form">
+            <amp-img src="img/server/controller-singup-icon.svg" alt="" height="91" width="117"  class="sing-up-form__img"></amp-img>
+            <input type="email" class="sing-up-form__input" placeholder="Just enter your email and we’ll take care of the rest" required>
+            <button type="submit" class="btn sing-up-btn">Subscribe</button>
+            <div submit-success>
+            <template type="amp-mustache">
+                <div class="form-descr-text">
+                  Success! Thanks {{name}} for trying the
+                  <code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how
+                  <code>amp-form</code> handles errors.
+                  </div>
+            </template>
+          </div>
+          <div submit-error>
+            <template type="amp-mustache" class="form-descr-text">
+                <div class="form-descr-text error">
+                  Error! Thanks {{name}} for trying the
+                  <code>amp-form</code> demo with an error response.
+                </div>
+            </template>
+          </div>
+        </form>
+    </div>
+    <span class="sing-up-block__descr">Get the latest news, reviews and exciting deals delivered to your inbox!</span>
+</div>
+<!-- /Sing up form -->

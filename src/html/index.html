@@ -1,0 +1,42 @@
+@@include('head.html', { "title": "main-page" })
+
+<!-- Styles -->
+<style amp-custom>
+@@include('fonts.html')
+@@include('baseCSS.html')
+@@include('CSS-form.html')
+@@include('CSS-header.html')
+@@include('CSS-main-slider.html')
+@@include('CSS-articles-preview.html')
+@@include('CSS-sing-up-form.html')
+@@include('CSS-controller-slider.html')
+@@include('CSS-info-block.html')
+@@include('CSS-footer.html')
+
+</style>
+<!-- /Styles -->
+
+</head>
+
+<body>
+    <div id="top-page"></div> 
+
+    @@include('header.html')
+    @@include('main-slider.html')
+    @@include('articles-preview.html')
+    @@include('sing-up-form.html')
+    @@include('controller-slider.html')
+    @@include('footer-menu.html')
+    @@include('footer.html')
+    <!-- 
+        media="(max-width: 649px)" - скрывает эелмент  amp  после определенной ширины
+        sizes="(max-width: 650px) 40vw, 100vw" - ширина элемента 40wv при ширине экрана до 650
+        heights="(min-width:500px) 200px, 80%"
+        layout="responsive" - Ширина элемента устанавливается равной ширине контейнера, а его высота автоматически меняется в соответствии с соотношением сторон, заданным атрибутами width и height. Этот макет поддерживается для большинства элементов AMP, в том числе amp-img и amp-video. Доступное место зависит от родительского элемента и может быть настроено с помощью свойства max-width в CSS.
+        layout="fill" -  Элемент занимает все доступное ему пространство как по ширине, так и по высоте. Другими словами, макет элемента fill соответствует макету родительского элемента.
+
+        amp-fit-text,amp-img с атрибутом layout="responsive" нужно задавать ширину и высоту максимально допустимую(при которой текст и картинка не искажаются), картинка и текст маштабируются в отошении ширины и высоты
+    -->
+</body>
+
+</html>

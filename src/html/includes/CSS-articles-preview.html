@@ -1,0 +1,488 @@
+.category-name {
+    width: 100%;
+    padding: 21px 20px;
+    color: #fff;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: -0.67px;
+    text-align: center;
+}
+
+.category-name_xbox-one {
+    background-image: linear-gradient(225deg, #78ff00 0%, #32ae00 100%);
+}
+
+.category-name_ps4 {
+    box-shadow: 0 2px 6px rgba(33,33,33,0.16);
+    background-image: linear-gradient(-45deg, #ff057c 0%, #8d0b93 51%, #321575 100%);
+}
+
+.articles-list-wrap {
+    margin-bottom: 35px;
+}
+
+.articles-list {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 19px;
+    font-size: 0;
+}
+
+.articles-list_short {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 945px;
+}
+
+.article-preview {
+    position: relative;
+    border: 1px solid #d0d0d0;
+}
+
+.article-preview:hover .article-preview__img img {
+    transform: scale(1.05);
+}
+
+.article-preview:hover .article-category__img svg path {
+    fill: #3ac900;
+}
+
+.article-preview:hover .article-category__img.article-category__img_ps4 svg path {
+    fill: #fa057d;
+}
+
+.article-preview_row {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
+    border-top: none;
+}
+
+.article-preview_col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 462px;
+    margin-top: 60px;
+}
+
+.article-preview_col .article-preview__img {
+    max-height: 300px;
+}
+
+.article-preview_col .article-preview__content {
+    flex: 1 1 auto;
+}
+
+.article-preview_col .article-preview__time {
+    top: -25px;
+    left: 0;
+}
+
+.article-preview-columns {
+    display: block;
+}
+
+.article-preview_big {
+    max-width: inherit;
+}
+
+.article-preview_big .article-preview__content {
+    padding-right: 80px;
+}
+
+.article-preview_big .article-preview__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.article-preview_big .article-preview__descr {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.article-preview_big .article-category {
+    right: 65px;
+}
+
+.article-preview_big .article-label {
+    right: 40px;
+}
+
+.article-preview__time {
+    position: absolute;
+    left: -65px;
+    top: 30px;
+    color: #4a4a4a;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+.article-preview__time img,
+.article-preview__time .fa {
+    margin-right: 3px;
+}
+
+.article-preview__time img,
+.article-preview__time span,
+.article-preview__time .fa {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.article-preview__time .fa {
+    font-size: 16px;
+    color: #8f8f8f;
+}
+
+.article-preview__img {
+    display: block;
+    overflow: hidden;
+}
+
+.article-preview__img img {
+    transition: 0.6s;
+    transform: scale(1);
+    width: 100%;
+}
+
+.article-preview__content {
+    position: relative;
+    padding: 19px 19px 110px 19px;
+}
+
+.article-preview__title {
+    margin-bottom: 15px;
+    padding-right: 25px;
+    color: #4a4a4a;
+    font-family:'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+.article-preview__title a {
+    color: #4a4a4a;
+}
+
+.article-preview__descr {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #707070;
+}
+
+.article-preview__descr_short {
+    max-width: 350px;
+}
+
+.article-marker {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    border-radius: 100px;
+}
+
+.article-marker_small {
+    width: 8px;
+    height: 8px;
+}
+
+.article-marker_long {
+    width: 50px;
+}
+
+.article-marker_wide {
+    width: 100px;
+}
+
+.article-marker_article {
+    background-color: #4a4a4a;
+}
+
+.article-marker_xbox-one {
+    background-color: #3ac900;
+}
+
+.article-marker_ps4 {
+    background-color: #fa057d;
+}
+
+.author {
+    display: inline-block;
+    position: absolute;
+    bottom: 19px;
+    left: 19px;
+    font-size: 20px;
+}
+
+.author__content,
+.author__img,
+.article-category__img,
+.article-category__name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.author__img {
+    width: 68px;
+    height: 68px;
+    margin-right: 8px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.author__img img {
+    width: 100%;
+}
+
+.author__content {
+    color: #4a4a4a;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+}
+
+.author__name {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.58px;
+}
+
+.author__name + .article-date {
+    margin-top: 5px;
+}
+
+.article-date {
+    display: inline-block;
+}
+
+.article-category {
+    position: absolute;
+    bottom: 19px;
+    right: 40px;
+}
+
+.article-category__img svg,
+.article-category__img img {
+    width: 58px;
+    height: 58px;
+}
+
+.article-category__img svg path,
+.article-category__img img path {
+    transition: 0.6s;
+}
+
+.article-category__name {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    margin-left: 18px;
+    transform: translateZ(0);
+}
+
+.article-category__name_xbox-one {
+    color: #3ac900;
+}
+
+.article-category__name_ps4 {
+    color: #fa057d;
+}
+
+.article-label {
+    position: absolute;
+    top: 0;
+    right: 19px;
+    display: inline-block;
+    padding: 12px;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.86px;
+}
+
+.article-label:after,
+.article-label:before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.article-label:after {
+    left: 0;
+    border-width: 15px 0 0 20px;
+}
+
+.article-label:before {
+    right: 0;
+    border-width: 0 0 15px 20px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .article-label {
+        transform: translateX(-50%) rotate(180deg);
+    }
+}
+
+.article-label_xbox-one {
+    background: #3ac900;
+}
+
+.article-label_xbox-one:after {
+    border-color: transparent transparent transparent #3ac900;
+}
+
+.article-label_xbox-one:before {
+    border-color: transparent transparent #3ac900 transparent;
+}
+
+.article-label_ps4 {
+    background: #fa057d;
+}
+
+.article-label_ps4:after {
+    border-color: transparent transparent transparent #fa057d;
+}
+
+.article-label_ps4:before {
+    border-color: transparent transparent #fa057d transparent;
+}
+
+.article-label_small {
+    padding: 5px;
+    font-size: 8px;
+}
+
+.article-label_small:after,
+.article-label_small:before {
+    top: -7px;
+}
+
+.article-label_small:after {
+    left: 0;
+    border-width: 8px 0 0 10px;
+}
+
+.article-label_small:before {
+    right: 0;
+    border-width: 0 0 8px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .category-name {
+        margin-bottom: 35px;
+    }
+
+    .articles-list-wrap {
+        padding: 0 20px;
+    }
+
+    .container-short .articles-list-wrap {
+        padding: 0;
+    }
+
+    .article-preview {
+        margin-bottom: 30px;
+    }
+
+    .article-preview_big .article-preview__title {
+        font-size: 32px;
+    }
+    .article-preview_col {
+        display: block;
+        margin: 35px 0 0;
+        max-width: inherit;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .category-name {
+        font-size: 35px;
+    }
+
+    .article-preview .article-preview__title {
+        font-size: 26px;
+    }
+
+    .article-preview .article-preview__descr {
+        font-size: 14px;
+    }
+
+    .article-preview .article-preview__content {
+        padding-bottom: 90px;
+    }
+
+    .article-preview__time {
+        top: -22px;
+        left: 0;
+    }
+
+    .author__img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .article-preview_big .article-preview__content {
+        padding-right: 20px;
+    }
+
+    .article-preview_big .article-label {
+        right: 19px;
+    }
+
+    .article-label {
+        padding: 5px;
+        font-size: 8px;
+    }
+
+    .article-label:after,
+  .article-label:before {
+        top: -7px;
+    }
+
+    .article-label:after {
+        left: 0;
+        border-width: 8px 0 0 10px;
+    }
+
+    .article-label:before {
+        right: 0;
+        border-width: 0 0 8px 10px;
+    }
+
+    .article-category__img img,
+  .article-category__img svg {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .article-category {
+        display: none;
+    }
+
+    .article-category__img {
+        display: none;
+    }
+
+    .article-category__img img,
+  .article-category__img svg {
+        width: 38px;
+        height: 38px;
+    }
+
+    .article-category {
+        bottom: 24px;
+    }
+}

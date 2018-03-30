@@ -1,0 +1,142 @@
+.footer-info {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    min-height: 125px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rights {
+    max-width: 205px;
+}
+
+.rights p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666;
+}
+
+.bbb-rating,
+.authorize,
+.paypal {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social {
+    font-size: 0;
+}
+
+.social__block {
+    margin-bottom: 10px;
+}
+
+.social__block span,.social__block amp-social-share {
+    display: inline-block;
+    margin: 0 14px 8px 0;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 700;
+    color: #838383;
+    text-transform: uppercase;
+}
+
+.social__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 16px 8px 0;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #afadad;
+    color: #fff;
+}
+
+.social__icon:last-of-type {
+    margin-right: 0;
+}
+
+.social__icon:hover {
+    background: #58bbe4;
+    color: #000;
+}
+
+.social__icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 14px;
+    color:#fff;
+}
+
+.services__link {
+    display: inline-block;
+    color: #c2c2c2;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.services__link_footer {
+    font-size: 13px;
+    color: #666;
+    margin: 0 15px 0 0;
+}
+
+.services__link_footer:last-of-type {
+    margin-right: 0;
+}
+
+a.services__link:hover,
+a.services__link.active {
+    color: #58bbe4;
+}
+
+p.services__link {
+    max-width: 165px;
+}
+
+@media only screen and (max-width: 900px) {
+    .footer-info {
+        display: block;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .rights {
+        max-width: inherit;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rights p {
+        line-height: 22px;
+    }
+
+    .bbb-rating,
+  .authorize,
+  .paypal {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .social {
+        margin-top: 20px;
+    }
+
+    .footer-logo {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-logo table {
+        margin: 0 auto;
+    }
+}
