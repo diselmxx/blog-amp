@@ -20,12 +20,13 @@
     background-position: bottom center;
 }
 .first-slide {
-    background-image: url('img/server/slider-item-bg.png');
+    background-image: url('img/server/slider-item-bg2.png');
 }
 .second-slide {
     background-image: url('img/server/slider-item-bg.png');
 }
 .slide {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,4 +101,104 @@
     bottom: 20px;
     top: inherit;
     background-image: url('img/server/slider-arrow-right.svg');
+}
+.big-slide {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.big-slide .btn {
+    margin: 0 auto;
+}
+.big-slide__img {
+    position: absolute;
+    left: 50%;
+    top:70px;
+    transform: translateX(-50%);
+}
+.big-slide__img  amp-img {
+    position: relative;
+    display: inline-block;
+}
+.big-slide__img1{
+    z-index: 1;
+}
+.big-slide__img1 amp-img{
+    top: 50px;
+    left: 20px;
+}
+.big-slide__img2 amp-img{
+    top: -35px;
+    left: -10px;
+}
+.big-slide__content {
+    width: 100%;
+    padding:200px 20px 0 20px;
+}
+.big-slide-title {
+    font-size: 30px;
+    color:#fff;
+    margin-bottom: 15px;
+}
+.big-slide-descr {
+    font-size: 16px;
+    margin-bottom: 28px;
+    color:#fff;
+}
+.slide-btn {
+    z-index: 2;
+}
+@media only screen and (min-width:600px) {
+    .big-slide__content {
+        padding: 0 0 0 40%;
+    }
+    .big-slide-title {
+        font-size: 48px;
+    }
+    .big-slide-descr {
+        font-size: 25px;
+    }
+    .big-slide__img {
+        left:0;
+        width: 50%;
+        top: 50%;
+        right: inherit;
+        transform: translateY(-50%);
+    }
+}
+@media only screen and (min-width:900px) {
+    .big-slide__content {
+        padding-left: 0;
+        max-width: 500px;
+    }
+    .big-slide-title {
+        font-size: 64px;
+    }
+    .big-slide-descr {
+        font-size: 36px;
+    }
+    .big-slide__img {
+        position: relative;
+        flex: 1;
+        width:inherit;
+        top:0;
+        transform: none;
+    }
+    .big-slide__img1 amp-img{
+        top: 0;
+        left: 0;
+    }
+    .big-slide__img2 amp-img{
+        top: 0;
+        left: 0;
+    }
+}
+@media only screen and (max-width:768px) {
+.slide-btn {
+    display: none;
+}
 }

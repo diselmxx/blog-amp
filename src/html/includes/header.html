@@ -8,9 +8,9 @@
             <a href="#" class="mobile-menu__logo">
                 <amp-img src="img/server/logo.svg" alt="Welcome" height="40" width="400"></amp-img>
             </a>
-            <a href="#" class="mobile-menu__search-link">
-            <i class="fa fa-search header-icon" aria-hidden="true"></i>
-        </a>
+            <button class="mobile-menu__search-link" on="tap:search.open">
+                <i class="fa fa-search header-icon" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
     <!-- /Header -->
@@ -43,9 +43,9 @@
         </div>
         <div class="mobile-menu__row">
             <span class="mobile-menu__social">
-                <a href="" class="mobile-menu__social-link"><i class="fa fa-twitter header-icon" aria-hidden="true"></i></a>
-                <a href="" class="mobile-menu__social-link"><i class="fa fa-facebook header-icon" aria-hidden="true"></i></a>
-                <a href="" class="mobile-menu__social-link"><i class="fa fa-youtube-play header-icon" aria-hidden="true"></i></a>
+                <amp-social-share class="social-block__link" type="twitter" width="30" height="30"><i class="fa fa-twitter header-icon" aria-hidden="true"></i></amp-social-share>
+                <amp-social-share class="social-block__link" type="facebook" width="30" height="30"><i class="fa fa-facebook header-icon" aria-hidden="true"></i></amp-social-share>
+                <amp-social-share type="gplus" class="social-block__link"  width="30" height="30"><i class="fa fa-youtube header-icon" aria-hidden="true"></i></amp-social-share>
             </span>
         </div>
         <div class="mobile-menu__row">
@@ -58,97 +58,15 @@
     </div>
 </amp-sidebar>
 
+<amp-sidebar id="search" class="search-inpt" layout="nodisplay" side="right">
+    <form method="GET" 
+        action="/components/amp-form/submit-form"
+        target="_top">
+            <input type="search"
+                  placeholder="Search..."
+                  name="googlesearch">
+            <button type="submit" class="ampstart-btn caps">Search</button>
+    </form>
+</amp-sidebar>
 
-<!-- Login Form -->
-<amp-lightbox id="my-lightbox" layout="nodisplay">
-  <div class="lightbox"
-    role="button"
-    tabindex="0">
-    <amp-selector role="tablist"
-          layout="container"
-          class="login-form">
 
-            <div class="login-form__header">
-                <a href="" class="login-form__logo"><amp-img src="img/server/login-form-logo.svg?" alt="Logo" height="30" width="300"></amp-img></a>
-                <button on="tap:my-lightbox.close" role="button" class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
-            </div>
-            <div class="login-form__content">
-
-                <button class="btn btn_inline btn_gray login-form__btn tabButton" role="tab" selected option="a">Register</button>
-                <div class="tabContent login-form__tabContent" role="tabpanel">
-                    <form method="post"
-                          action-xhr="https://example.com/subscribe"
-                          target="_top"
-                          id="sing-in-form">
-                        <div class="form__row form__row_border form__row_login">
-                            <div class="form__input">
-                                <label for="email" class="form-label reqired">Email</label>
-                                <input type="email" id="email" placeholder="Bill.Smith@gmail.com">
-                            </div>
-                        </div>
-                        <div class="form__row form__row_login">
-                            <div class="form__input">
-                                <label for="pas" class="form-label reqired">Password</label>
-                                <input type="text" id="pas" placeholder="***">
-                            </div>
-                        </div>
-                        <div class="form__row form__row_border form__row_login">
-                            <div class="form__input">
-                                <label for="re-pas" class="form-label reqired">Re-enter <br> Password</label>
-                                <input type="text" id="re-pas" placeholder="***">
-                            </div>
-                        </div>
-                        <div class="form__row form__row_login">
-                            <div class="form__input">
-                                <label for="first-name" class="form-label reqired">First Name</label>
-                                <input type="text" id="first-name">
-                            </div>
-                        </div>
-                        <div class="form__row form__row_login">
-                            <div class="form__input">
-                                <label for="last-name" class="form-label reqired">Last Name</label>
-                                <input type="text" id="last-name">
-                            </div>
-                        </div>
-                        <div class="cf login-form__footer">
-                            <button type="submit" class="btn btn_gray btn_gray_active btn_inline">Register</button>
-                        </div>
-                    </form>
-                </div>
-
-                <button class="btn btn_inline login-form__btn sing-in-btn tabButton" role="tab" option="b">Sign In</button>
-                <div class="tabContent login-form__tabContent" role="tabpanel">
-                    <form method="post"
-                    action-xhr="https://example.com/subscribe"
-                    target="_top" 
-                    id="sing-in-form">
-                        <div class="form__row form__row_login">
-                            <div class="form__input">
-                                <label for="sing-in-email" class="form-label reqired">Email</label>
-                                <input type="text" id="sing-in-email" placeholder="Bill.Smith@gmail.com">
-                            </div>
-                        </div>
-                        <div class="form__row form__row_border form__row_login">
-                            <div class="form__input">
-                                <label for="sing-in-pas" class="form-label reqired">Password</label>
-                                <input type="text" id="sing-in-pas" placeholder="***">
-                            </div>
-                        </div>
-                        <div class="cf login-form__footer">
-                            <div class="checkbox">
-                                <input type="checkbox" id="remember">
-                                <label for="remember" class="checkbox__mask"></label>
-                                <label for="remember" class="checkbox__label">Remember?</label>
-                            </div>
-                            <button type="submit" class="btn btn_gray btn_gray_active btn_inline login-form__btn fl-right">Enter</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-
-        </amp-selector>
-  </div>
-</amp-lightbox>
-
-<!-- /Login Form -->
