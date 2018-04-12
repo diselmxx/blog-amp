@@ -1,7 +1,22 @@
 .articles-slider {
-    position: relative;
+    position:  relative;
     width: 100%;
     padding:0 20px;
+}
+.articles-slider:before {
+    content: "";
+    position:  absolute;
+    bottom:0;
+    left: 0;
+    width:100%;
+    height:15px;
+    background: #fff;
+    z-index: 1;
+}
+.articles-slider >div:first-of-type { 
+    display: flex;
+    position:  relative;
+    padding-bottom: 20px
 }
 
 .article-slide {
@@ -9,10 +24,11 @@
     display: inline-block;
     vertical-align: top;
     width: 225px;
-    height: 335px;
+    min-width: 225px;
     border: 1px solid #d0d0d0;
     overflow: hidden;
 }
+
 
 .article-slide:hover .article-slide__img img {
     transform: scale(1.05);
@@ -67,7 +83,6 @@
     position: relative;
     padding: 13px 13px 50px;
     overflow: hidden;
-    height: 173px;
     white-space: normal;
 }
 

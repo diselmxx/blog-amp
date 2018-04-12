@@ -1,0 +1,131 @@
+.conttrolers {
+    position: relative;
+    max-width: 800px;
+    z-index: 8;
+}
+.conttrolers * {
+    font-family:'Open-Sans',sans-serif;
+}
+.product-slider-wrap {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+    z-index: 8;
+}
+.product-slider-header {
+    position: relative;
+}
+.product-slider-header h4 {
+    margin-bottom: 10px;
+    padding-right: 90px;
+    color: #4a4a4a;
+    font-family: 'Akzidenz-Grotesk Pro',sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: -0.37px;
+}
+.product-slider {
+    width: 100%;
+}
+.product-slider__item {
+    position: relative;
+    margin: 0 5px;
+}
+.product-slider-nav {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 0;
+}
+.product-slider-btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 7px;
+    cursor: pointer;
+}
+.product-slider-next-btn {
+    transform: rotate(180deg);
+}
+.product-detail {
+    position: relative;
+    padding: 50px 0 10px;
+    margin: 0;
+    display: inline-block;
+    width: 175px;
+    height: 295px;
+    border: 1px solid #e4e4e4;
+    vertical-align: middle;
+    background: #fff;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.product-detail:hover {
+    border-color: #c7c1c1;
+}
+
+.product-detail .close {
+    top: 10px;
+    right: 10px;
+}
+
+.product-detail__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: inherit;
+}
+
+.product-detail__img {
+    text-align: center;
+}
+
+.product-detail__img img {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.product-detail__img {
+    height: 145px;
+}
+
+.product__content {
+    position: absolute;
+    padding: 0 5px;
+    width: 100%;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product__name,
+.product-banner__name,
+.product-grid__name {
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+    display: block;
+}
+
+.product__name.left,
+.product-banner__name.left,
+.product-grid__name.left {
+    text-align: left;
+}
+
+.product-grid__name {
+    max-height: 60px;
+}
